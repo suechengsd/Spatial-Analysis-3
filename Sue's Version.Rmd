@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(sf)
 library(tidyverse)
+library(dplyr)
 library(ggthemes)
 library(ggspatial)
 library(units)
@@ -31,6 +32,8 @@ wards <- st_read("https://data.cambridgema.gov/api/geospatial/wb9r-yksd?method=e
 comparking <- st_read("https://data.cambridgema.gov/api/geospatial/t8tm-muns?method=export&format=KML", 
                    quiet = TRUE) 
 
+pspots <- st_read("Public_Handicap_Parking_Spots.kml")
+
 ```
 
 ```{r}
@@ -47,10 +50,14 @@ wards <- wards %>%
 
 comparking <- comparking %>%
   st_transform(MA_state_plane)
+
+pspots <- pspots %>%
+  st_transform(MA_state_plane)
+
 ```
 
 ```{r}
-ggplot(comparking) +
+ggplot(pspots) +
   geom_sf(color = "blue", size = 1) +
   geom_sf(data= nhoods, fill = NA, color = "gray") +
   theme_map() +
@@ -144,5 +151,29 @@ theme_map() +
 ```{r}
 avg_comparking_dens_wards <- mean(wards$comparking_dens)
 avg_comparking_dens_wards
+```
+
+
+```{r}
+
+pspots <- st_read(dsn = "https://data.cambridgema.gov/api/geospatial/6h7q-rwhf?method=export&format=KML")
+
+plot(pspots)
+
+multi.p <- st_cast(pspots, "MULTIPOINT")
+
+my.points <- multi.p %>%  group_by(geometry) %>% st_cast("POINT")
+
+plot(my.points)
+
+my.points
+
+my.points.A <- my.points %>% filter(binomial == 'A') %>% as('Spatial')
+my.points.B <- my.points %>% filter(binomial == 'B') %>% as('Spatial')
+eoo.A <- my.points.A %>% makeEOO()
+eoo.B <- my.points.A %>% makeEOO()
+
+
+
 ```
 ```

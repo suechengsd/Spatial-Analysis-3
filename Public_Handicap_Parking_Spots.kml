@@ -1,0 +1,3142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Public_Handicap_Parking_Spots.csv</name>
+	<Schema name="Public_Handicap_Parking_Spots" id="S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+		<SimpleField type="string" name="Street_Number"><displayName>&lt;b&gt;Street Number&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Street"><displayName>&lt;b&gt;Street&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Side_of_Street"><displayName>&lt;b&gt;Side of Street&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="From"><displayName>&lt;b&gt;From&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="To"><displayName>&lt;b&gt;To&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Install_Effective_Date"><displayName>&lt;b&gt;Install Effective Date&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Install_Regulation_Number"><displayName>&lt;b&gt;Install Regulation Number&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Longitude"><displayName>&lt;b&gt;Longitude&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Latitude"><displayName>&lt;b&gt;Latitude&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Street Number</b></td><td>$[Public_Handicap_Parking_Spots/Street_Number]</td></tr>
+  <tr><td><b>Street</b></td><td>$[Public_Handicap_Parking_Spots/Street]</td></tr>
+  <tr><td><b>Side of Street</b></td><td>$[Public_Handicap_Parking_Spots/Side_of_Street]</td></tr>
+  <tr><td><b>From</b></td><td>$[Public_Handicap_Parking_Spots/From]</td></tr>
+  <tr><td><b>To</b></td><td>$[Public_Handicap_Parking_Spots/To]</td></tr>
+  <tr><td><b>Install Effective Date</b></td><td>$[Public_Handicap_Parking_Spots/Install_Effective_Date]</td></tr>
+  <tr><td><b>Install Regulation Number</b></td><td>$[Public_Handicap_Parking_Spots/Install_Regulation_Number]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[Public_Handicap_Parking_Spots/Longitude]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[Public_Handicap_Parking_Spots/Latitude]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Street Number</b></td><td>$[Public_Handicap_Parking_Spots/Street_Number]</td></tr>
+  <tr><td><b>Street</b></td><td>$[Public_Handicap_Parking_Spots/Street]</td></tr>
+  <tr><td><b>Side of Street</b></td><td>$[Public_Handicap_Parking_Spots/Side_of_Street]</td></tr>
+  <tr><td><b>From</b></td><td>$[Public_Handicap_Parking_Spots/From]</td></tr>
+  <tr><td><b>To</b></td><td>$[Public_Handicap_Parking_Spots/To]</td></tr>
+  <tr><td><b>Install Effective Date</b></td><td>$[Public_Handicap_Parking_Spots/Install_Effective_Date]</td></tr>
+  <tr><td><b>Install Regulation Number</b></td><td>$[Public_Handicap_Parking_Spots/Install_Regulation_Number]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[Public_Handicap_Parking_Spots/Longitude]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[Public_Handicap_Parking_Spots/Latitude]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Folder id="layer 0">
+		<name>Public_Handicap_Parking_Spots</name>
+		<visibility>0</visibility>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">44</SimpleData>
+					<SimpleData name="Street">Francis Ave</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">40&apos; E of Curve</SimpleData>
+					<SimpleData name="To">60&apos;E of Curve</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2009-002</SimpleData>
+					<SimpleData name="Longitude">-71.1123</SimpleData>
+					<SimpleData name="Latitude">42.3804</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11234471999998,42.38036858000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">16</SimpleData>
+					<SimpleData name="Street">Dunster St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">142&apos; S of Mass Ave.</SimpleData>
+					<SimpleData name="To">184&apos; S of Mass Ave.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-000</SimpleData>
+					<SimpleData name="Longitude">-71.1189</SimpleData>
+					<SimpleData name="Latitude">42.3728</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11889177,42.37282661000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">2</SimpleData>
+					<SimpleData name="Street">Kirkland St (For 45 Quincy St)</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">333&apos; W of Quincy St.</SimpleData>
+					<SimpleData name="To">374&apos; W of Quincy St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2000-030</SimpleData>
+					<SimpleData name="Longitude">-71.1172</SimpleData>
+					<SimpleData name="Latitude">42.3769</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11717159,42.37693095,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">Waterhouse St @ Follen St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">13&apos; W of Follen St.</SimpleData>
+					<SimpleData name="To">33&apos; W of Follen St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-111</SimpleData>
+					<SimpleData name="Longitude">-71.1216</SimpleData>
+					<SimpleData name="Latitude">42.3779</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12164251,42.37787371999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">270</SimpleData>
+					<SimpleData name="Street">Albany St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">332&apos; N of Erie St</SimpleData>
+					<SimpleData name="To">350&apos; N of Erie St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2013-005</SimpleData>
+					<SimpleData name="Longitude">-71.1021</SimpleData>
+					<SimpleData name="Latitude">42.3576</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10212833,42.35757056,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1046</SimpleData>
+					<SimpleData name="Street">Cambridge St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">32&apos; W of Columbia St.</SimpleData>
+					<SimpleData name="To">58&apos; W of Columbia St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-022</SimpleData>
+					<SimpleData name="Longitude">-71.0947</SimpleData>
+					<SimpleData name="Latitude">42.3728</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09471483999999,42.37283668000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">166</SimpleData>
+					<SimpleData name="Street">Cushing St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">43&apos; N of Locust St</SimpleData>
+					<SimpleData name="To">23&apos; N of Locust St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2011-006</SimpleData>
+					<SimpleData name="Longitude">-71.1527</SimpleData>
+					<SimpleData name="Latitude">42.3794</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.15272942,42.37941512999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">485</SimpleData>
+					<SimpleData name="Street">Broadway</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">22&apos; E of Prescott St.</SimpleData>
+					<SimpleData name="To">44&apos; E of Prescott St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1993-012</SimpleData>
+					<SimpleData name="Longitude">-71.1142</SimpleData>
+					<SimpleData name="Latitude">42.3749</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11419635999999,42.37488907,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">438</SimpleData>
+					<SimpleData name="Street">Green St (For 806 Mass Ave)</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">121&apos; E of Seller St.</SimpleData>
+					<SimpleData name="To">160&apos; E of Seller St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2003-021</SimpleData>
+					<SimpleData name="Longitude">-71.1068</SimpleData>
+					<SimpleData name="Latitude">42.3663</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10675723,42.36634161000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">147</SimpleData>
+					<SimpleData name="Street">Hampshire St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">73&apos; N of Norfolk St.</SimpleData>
+					<SimpleData name="To">93&apos; N of Norfolk St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2007-012</SimpleData>
+					<SimpleData name="Longitude">-71.0977</SimpleData>
+					<SimpleData name="Latitude">42.3713</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09769592000001,42.37132732999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">8</SimpleData>
+					<SimpleData name="Street">Garden St (For H.U.)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">194&apos; E of Appian St.</SimpleData>
+					<SimpleData name="To">236&apos; E of Appian Way</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-000</SimpleData>
+					<SimpleData name="Longitude">-71.122</SimpleData>
+					<SimpleData name="Latitude">42.3759</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.1219755,42.37587005,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">47</SimpleData>
+					<SimpleData name="Street">Francis Ave</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">40&apos; E of Curve</SimpleData>
+					<SimpleData name="To">60&apos;E of Curve</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2009-002</SimpleData>
+					<SimpleData name="Longitude">-71.113</SimpleData>
+					<SimpleData name="Latitude">42.3806</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11297853000001,42.38056818000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">21</SimpleData>
+					<SimpleData name="Street">Ames St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">250&apos; N of Amherst St.</SimpleData>
+					<SimpleData name="To">290&apos; N of Amherst St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2008-005</SimpleData>
+					<SimpleData name="Longitude">-71.0907</SimpleData>
+					<SimpleData name="Latitude">42.3601</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09066251,42.36007354000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">304</SimpleData>
+					<SimpleData name="Street">Harvard St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">16&apos; E of Prescott St</SimpleData>
+					<SimpleData name="To">35&apos; E of Prescott St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2010-007</SimpleData>
+					<SimpleData name="Longitude">-71.1062</SimpleData>
+					<SimpleData name="Latitude">42.3697</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10621614,42.36974017,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">32</SimpleData>
+					<SimpleData name="Street">Albany St (opp. #200 Tech Square)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">165&apos; W of Main St.</SimpleData>
+					<SimpleData name="To">180&apos; W of Main St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-115</SimpleData>
+					<SimpleData name="Longitude">-71.0929</SimpleData>
+					<SimpleData name="Latitude">42.3622</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09291247000002,42.36215648999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">186</SimpleData>
+					<SimpleData name="Street">Concord Ave</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">78&apos; E of Huron Ave.</SimpleData>
+					<SimpleData name="To">98&apos; E of Huron Ave.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1987-000</SimpleData>
+					<SimpleData name="Longitude">-71.1307</SimpleData>
+					<SimpleData name="Latitude">42.3822</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.13074067999999,42.38216680000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">West St (For 47-51 Inman St)</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">23&apos; W of Inman St.</SimpleData>
+					<SimpleData name="To">43&apos; W of Inman St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1995-006</SimpleData>
+					<SimpleData name="Longitude">-71.1037</SimpleData>
+					<SimpleData name="Latitude">42.3694</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10368662,42.36943066000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1176</SimpleData>
+					<SimpleData name="Street">Cambridge St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">16&apos; E of Tremont St.</SimpleData>
+					<SimpleData name="To">38&apos; E of Tremont St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1991-004</SimpleData>
+					<SimpleData name="Longitude">-71.097</SimpleData>
+					<SimpleData name="Latitude">42.3733</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09696846999999,42.37333344999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">73</SimpleData>
+					<SimpleData name="Street">Brattle St (For # 60 Church St)</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">48&apos; S of Church St.</SimpleData>
+					<SimpleData name="To">28&apos; S of Church St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-019</SimpleData>
+					<SimpleData name="Longitude">-71.1211</SimpleData>
+					<SimpleData name="Latitude">42.3737</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12114778,42.37372355000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">2103</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">20&apos; S of Russell St.</SimpleData>
+					<SimpleData name="To">44&apos; S of Russell St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-000</SimpleData>
+					<SimpleData name="Longitude">-71.1236</SimpleData>
+					<SimpleData name="Latitude">42.3917</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12357317,42.39172615000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">23</SimpleData>
+					<SimpleData name="Street">Everett St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">396&apos; W of Oxford St.</SimpleData>
+					<SimpleData name="To">416&apos; W of Oxford St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2006-007</SimpleData>
+					<SimpleData name="Longitude">-71.118</SimpleData>
+					<SimpleData name="Latitude">42.38</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11795694,42.38000510000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">Lot #14</SimpleData>
+					<SimpleData name="Street">Lot #14 Springfield St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">10&apos; E of Springfield St.</SimpleData>
+					<SimpleData name="To">34&apos; E of Springfield St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">4/21/1997</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1997-009</SimpleData>
+					<SimpleData name="Longitude">-71.1003</SimpleData>
+					<SimpleData name="Latitude">42.3742</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10029473,42.37416629999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">167</SimpleData>
+					<SimpleData name="Street">Albany St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">140&apos; S of Mass Ave</SimpleData>
+					<SimpleData name="To">160&apos; S of Mass Ave</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2011-004</SimpleData>
+					<SimpleData name="Longitude">-71.0984</SimpleData>
+					<SimpleData name="Latitude">42.3599</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.0984248,42.35986002999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">10</SimpleData>
+					<SimpleData name="Street">Garden St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">137&apos; W of Mason St</SimpleData>
+					<SimpleData name="To">159&apos; W of Mason St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2010-008</SimpleData>
+					<SimpleData name="Longitude">-71.1223</SimpleData>
+					<SimpleData name="Latitude">42.3761</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12228727,42.37611871000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">10</SimpleData>
+					<SimpleData name="Street">Pleasant St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">20&apos; S of Green St.</SimpleData>
+					<SimpleData name="To">40&apos; S of Green St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1993-026</SimpleData>
+					<SimpleData name="Longitude">-71.1061</SimpleData>
+					<SimpleData name="Latitude">42.3657</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10608786,42.36571408000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">480</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">113&apos; E of Brookline St.</SimpleData>
+					<SimpleData name="To">134&apos; E of Brookline St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1998-019</SimpleData>
+					<SimpleData name="Longitude">-71.1014</SimpleData>
+					<SimpleData name="Latitude">42.3638</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10143397,42.36384987,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">806</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">271&apos; W of Pleasant St.</SimpleData>
+					<SimpleData name="To">295&apos; W of Pleasant St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-107</SimpleData>
+					<SimpleData name="Longitude">-71.1062</SimpleData>
+					<SimpleData name="Latitude">42.3667</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10622062000002,42.36674377,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">41</SimpleData>
+					<SimpleData name="Street">Second St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">338&apos; S of Cambridge St.</SimpleData>
+					<SimpleData name="To">357&apos; S of Cambridge St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1998-019</SimpleData>
+					<SimpleData name="Longitude">-71.0791</SimpleData>
+					<SimpleData name="Latitude">42.3701</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.07913214000001,42.37008950000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">29</SimpleData>
+					<SimpleData name="Street">Chauncy St (For #29 Garden St)</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">20&apos; N of Garden St.</SimpleData>
+					<SimpleData name="To">40&apos; N of Garden St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2004-003</SimpleData>
+					<SimpleData name="Longitude">-71.1237</SimpleData>
+					<SimpleData name="Latitude">42.3793</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12366967000001,42.37928730000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">Portland St (Opp. Washington St)</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">350&apos; N of Main St.</SimpleData>
+					<SimpleData name="To">370&apos; N of Main St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-114</SimpleData>
+					<SimpleData name="Longitude">-71.0928</SimpleData>
+					<SimpleData name="Latitude">42.3639</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09278392,42.36389431000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">2050</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">82&apos; S of Walden St.</SimpleData>
+					<SimpleData name="To">124&apos; S of Walden St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-000</SimpleData>
+					<SimpleData name="Longitude">-71.1229</SimpleData>
+					<SimpleData name="Latitude">42.391</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12292284,42.39104550999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">Farwell Pl. (For 51 Brattle)</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">120&apos; N of Brattle St.</SimpleData>
+					<SimpleData name="To">139&apos; n of brattle St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1993-039</SimpleData>
+					<SimpleData name="Longitude">-71.1211</SimpleData>
+					<SimpleData name="Latitude">42.3748</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12112296000001,42.37479077000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1493</SimpleData>
+					<SimpleData name="Street">Cambridge St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">136&apos; W of Line St.</SimpleData>
+					<SimpleData name="To">200&apos; W of Line St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1998-002</SimpleData>
+					<SimpleData name="Longitude">-71.1044</SimpleData>
+					<SimpleData name="Latitude">42.3744</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10443633,42.37441677999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">25</SimpleData>
+					<SimpleData name="Street">Granite St (Front of School)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">35&apos; E of Pearl St.</SimpleData>
+					<SimpleData name="To">55&apos; E of Pearl St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2004-007</SimpleData>
+					<SimpleData name="Longitude">-71.1117</SimpleData>
+					<SimpleData name="Latitude">42.3559</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11166956,42.35586806999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">826</SimpleData>
+					<SimpleData name="Street">Cambridge St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">82&apos; W of Berkshire St.</SimpleData>
+					<SimpleData name="To">120&apos; W of Berkshire St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1987-000</SimpleData>
+					<SimpleData name="Longitude">-71.0903</SimpleData>
+					<SimpleData name="Latitude">42.3722</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09032933,42.37219492999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">Dorthy Dottie Doyle Way</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">92&apos; E of Bigelow St.</SimpleData>
+					<SimpleData name="To">132&apos; E of Bigelow St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">4/14/1994</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1994-007</SimpleData>
+					<SimpleData name="Longitude">-71.1055</SimpleData>
+					<SimpleData name="Latitude">42.3673</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10548658,42.3673365,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">Lot #5</SimpleData>
+					<SimpleData name="Street">Lot #5, Bishop Allen Dr</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">by walkway to Mass Ave.</SimpleData>
+					<SimpleData name="To">NA</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">Chp. 40 MGL</SimpleData>
+					<SimpleData name="Longitude">-71.1018</SimpleData>
+					<SimpleData name="Latitude">42.3652</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10184129,42.36515277000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1</SimpleData>
+					<SimpleData name="Street">Amherst St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">68&apos; W of Wadsworth St.</SimpleData>
+					<SimpleData name="To">128&apos; W of Wadsworth St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1981-023</SimpleData>
+					<SimpleData name="Longitude">-71.0848</SimpleData>
+					<SimpleData name="Latitude">42.3611</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08478817000001,42.3610577,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">62</SimpleData>
+					<SimpleData name="Street">Sparks St (For 145 Brattle St - Church)</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">185&apos; S of Brewster St.</SimpleData>
+					<SimpleData name="To">210&apos; S of Brewster St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1994-022</SimpleData>
+					<SimpleData name="Longitude">-71.1305</SimpleData>
+					<SimpleData name="Latitude">42.3788</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.13046821,42.37878362000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">Macarelli Way</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">11&apos; W of Warren St.</SimpleData>
+					<SimpleData name="To">32&apos; W of Warren St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">4/21/1997</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1997-009</SimpleData>
+					<SimpleData name="Longitude">-71.0883</SimpleData>
+					<SimpleData name="Latitude">42.3725</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08829196000001,42.37251929000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1120</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">44&apos; E of Arrow St.</SimpleData>
+					<SimpleData name="To">62&apos; E of Arrow St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-000</SimpleData>
+					<SimpleData name="Longitude">-71.1139</SimpleData>
+					<SimpleData name="Latitude">42.3707</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11394122,42.37073979000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">51</SimpleData>
+					<SimpleData name="Street">Inman St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">44&apos; S of Inman Pl.</SimpleData>
+					<SimpleData name="To">84&apos; S of Inman St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1990-031</SimpleData>
+					<SimpleData name="Longitude">-71.1034</SimpleData>
+					<SimpleData name="Latitude">42.3696</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10336083,42.36956274999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">201-207</SimpleData>
+					<SimpleData name="Street">Western Ave</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">20&apos; E of Howard St.</SimpleData>
+					<SimpleData name="To">40&apos; E of Howard St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1993-035</SimpleData>
+					<SimpleData name="Longitude">-71.1106</SimpleData>
+					<SimpleData name="Latitude">42.3649</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11056440999998,42.36486034,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">86</SimpleData>
+					<SimpleData name="Street">Otis St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">60&apos; W of Sciarappa St</SimpleData>
+					<SimpleData name="To">80&apos; W of Sciarappa St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2013-005</SimpleData>
+					<SimpleData name="Longitude">-71.0819</SimpleData>
+					<SimpleData name="Latitude">42.3705</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08194047000002,42.37048509,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">2310</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">30&apos; N of Rice St</SimpleData>
+					<SimpleData name="To">50&apos; N of Rice St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-000</SimpleData>
+					<SimpleData name="Longitude">-71.1283</SimpleData>
+					<SimpleData name="Latitude">42.3955</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12832915,42.39547665999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">125</SimpleData>
+					<SimpleData name="Street">Vassar St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">68&apos; W of exit of Parking Lot</SimpleData>
+					<SimpleData name="To">90&apos; W of exit of parking Lot</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1987-000</SimpleData>
+					<SimpleData name="Longitude">-71.0969</SimpleData>
+					<SimpleData name="Latitude">42.3593</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09693504000001,42.35925098999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">24</SimpleData>
+					<SimpleData name="Street">Sacramento St (For Baldwin School)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">81&apos; W of Oxford St.</SimpleData>
+					<SimpleData name="To">111&apos; W of Oxford St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2003-028</SimpleData>
+					<SimpleData name="Longitude">-71.1173</SimpleData>
+					<SimpleData name="Latitude">42.3824</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11734042,42.38244917999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">844</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">106&apos; W of Sellers St.</SimpleData>
+					<SimpleData name="To">58&apos; E of Sellers St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1992-038</SimpleData>
+					<SimpleData name="Longitude">-71.1071</SimpleData>
+					<SimpleData name="Latitude">42.3673</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10707876999999,42.36733065,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">70</SimpleData>
+					<SimpleData name="Street">Pacific St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">82&apos; W of Sidney St</SimpleData>
+					<SimpleData name="To">102&apos; W of Sidney St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2013-004</SimpleData>
+					<SimpleData name="Longitude">-71.1025</SimpleData>
+					<SimpleData name="Latitude">42.3602</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10246237,42.36023921999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">Lot #2, Harvard Square</SimpleData>
+					<SimpleData name="Side_of_Street">NA</SimpleData>
+					<SimpleData name="From">two spaces - one at each entrance</SimpleData>
+					<SimpleData name="To">NA</SimpleData>
+					<SimpleData name="Install_Effective_Date">4/4/2002</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2002-011</SimpleData>
+					<SimpleData name="Longitude">-71.1211</SimpleData>
+					<SimpleData name="Latitude">42.3719</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12112988,42.37187376,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">134</SimpleData>
+					<SimpleData name="Street">Church St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">95&apos; W of Palmer St.</SimpleData>
+					<SimpleData name="To">134&apos; W of Palmer St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2010-001</SimpleData>
+					<SimpleData name="Longitude">-71.1212</SimpleData>
+					<SimpleData name="Latitude">42.374</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12120716,42.37398100000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">635</SimpleData>
+					<SimpleData name="Street">Vassar St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">22&apos; W of Amesbury St</SimpleData>
+					<SimpleData name="To">43&apos; W of Amesbury St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2011-006</SimpleData>
+					<SimpleData name="Longitude">-71.1057</SimpleData>
+					<SimpleData name="Latitude">42.3549</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10569516,42.35493392000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">450</SimpleData>
+					<SimpleData name="Street">Green St (For 806 Mass Ave)</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">101&apos; E of Seller St.</SimpleData>
+					<SimpleData name="To">121&apos; E of Seller St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2008-010</SimpleData>
+					<SimpleData name="Longitude">-71.1077</SimpleData>
+					<SimpleData name="Latitude">42.3667</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10766495999999,42.36673479000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">425</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">160&apos; W of Albany St</SimpleData>
+					<SimpleData name="To">180&apos; W of Albany St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2011-004</SimpleData>
+					<SimpleData name="Longitude">-71.1005</SimpleData>
+					<SimpleData name="Latitude">42.3637</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10048157,42.36366424999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">51</SimpleData>
+					<SimpleData name="Street">Bennett St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">50&apos; W of MBTA Busway</SimpleData>
+					<SimpleData name="To">74&apos; W of MBTA Busway</SimpleData>
+					<SimpleData name="Install_Effective_Date">11/23/2007</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2007-011</SimpleData>
+					<SimpleData name="Longitude">-71.1228</SimpleData>
+					<SimpleData name="Latitude">42.3727</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12282986000001,42.37270761000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">575</SimpleData>
+					<SimpleData name="Street">Smith Pl</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">103&apos; N of Fawcett St</SimpleData>
+					<SimpleData name="To">124&apos; N of Fawcett St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2010-004</SimpleData>
+					<SimpleData name="Longitude">-71.1502</SimpleData>
+					<SimpleData name="Latitude">42.394</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.15018863000002,42.39397395,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">119</SimpleData>
+					<SimpleData name="Street">Pacific St (For #235 Albany St)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">68&apos; W of Albany St.</SimpleData>
+					<SimpleData name="To">83&apos; W of Albany St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2008-008</SimpleData>
+					<SimpleData name="Longitude">-71.1037</SimpleData>
+					<SimpleData name="Latitude">42.3612</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10371214,42.36123425000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">6</SimpleData>
+					<SimpleData name="Street">Garden St (For H.U.)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">30&apos; W of Appian Way</SimpleData>
+					<SimpleData name="To">50&apos; W of Appian Way</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2004-007</SimpleData>
+					<SimpleData name="Longitude">-71.1219</SimpleData>
+					<SimpleData name="Latitude">42.3758</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12189012999998,42.37582438999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">St Peter&apos;s Field Lot</SimpleData>
+					<SimpleData name="Side_of_Street">NA</SimpleData>
+					<SimpleData name="From">214&apos; W of Sherman St.</SimpleData>
+					<SimpleData name="To">NA</SimpleData>
+					<SimpleData name="Install_Effective_Date">11/23/1992</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1992-036</SimpleData>
+					<SimpleData name="Longitude">-71.1327</SimpleData>
+					<SimpleData name="Latitude">42.3877</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.13271766,42.38766709000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">330</SimpleData>
+					<SimpleData name="Street">Mt. Auburn St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">174&apos; E ECL Longfellow</SimpleData>
+					<SimpleData name="To">194&apos; E of of Ecl Longfellow</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1991-004</SimpleData>
+					<SimpleData name="Longitude">-71.1359</SimpleData>
+					<SimpleData name="Latitude">42.3746</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.13589415,42.37461021999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1</SimpleData>
+					<SimpleData name="Street">Broadway</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">63&apos; E of Third St</SimpleData>
+					<SimpleData name="To">84&apos; E of Third St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2011-006</SimpleData>
+					<SimpleData name="Longitude">-71.084</SimpleData>
+					<SimpleData name="Latitude">42.3627</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08401385000001,42.36272988000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">42</SimpleData>
+					<SimpleData name="Street">Brattle St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">206&apos; N of Brattle St.</SimpleData>
+					<SimpleData name="To">250&apos; N of Brattle Sq.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-019</SimpleData>
+					<SimpleData name="Longitude">-71.1215</SimpleData>
+					<SimpleData name="Latitude">42.3737</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12154083,42.37371256000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">344</SimpleData>
+					<SimpleData name="Street">Broadway</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">20&apos; W of Inman St.</SimpleData>
+					<SimpleData name="To">60&apos; W of Inman St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2004-003</SimpleData>
+					<SimpleData name="Longitude">-71.1034</SimpleData>
+					<SimpleData name="Latitude">42.3701</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10338235,42.37008156999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">81</SimpleData>
+					<SimpleData name="Street">Mt. Auburn St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">36&apos; W of Dunster St.</SimpleData>
+					<SimpleData name="To">77&apos; W of Dunster St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2007-010</SimpleData>
+					<SimpleData name="Longitude">-71.1196</SimpleData>
+					<SimpleData name="Latitude">42.3724</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11955303000001,42.37241790000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">21</SimpleData>
+					<SimpleData name="Street">Athenaeum St (For 245 First St)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">148&apos; N of First St.</SimpleData>
+					<SimpleData name="To">124&apos; W of First St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1984-012</SimpleData>
+					<SimpleData name="Longitude">-71.0803</SimpleData>
+					<SimpleData name="Latitude">42.364</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08032457,42.36399461999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">125</SimpleData>
+					<SimpleData name="Street">Sixth St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">20&apos; N of Bent St</SimpleData>
+					<SimpleData name="To">40&apos; N of Bent St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2009-002</SimpleData>
+					<SimpleData name="Longitude">-71.086</SimpleData>
+					<SimpleData name="Latitude">42.3672</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08597150999999,42.36721790000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">250</SimpleData>
+					<SimpleData name="Street">Main St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">38&apos; E of Hayward St</SimpleData>
+					<SimpleData name="To">58&apos; E of Hayward St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2010-006</SimpleData>
+					<SimpleData name="Longitude">-71.085</SimpleData>
+					<SimpleData name="Latitude">42.3622</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08498909000001,42.36219360999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">Front St (For 265 Mass Ave)</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">180&apos; E of Mass Ave.</SimpleData>
+					<SimpleData name="To">150&apos; E of Mass Ave.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1985-000</SimpleData>
+					<SimpleData name="Longitude">-71.0974</SimpleData>
+					<SimpleData name="Latitude">42.362</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09744714000001,42.36199162000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">64</SimpleData>
+					<SimpleData name="Street">Brattle St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">16&apos; N of Hilliard St.</SimpleData>
+					<SimpleData name="To">42&apos; North of Brattle St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2001-014</SimpleData>
+					<SimpleData name="Longitude">-71.1227</SimpleData>
+					<SimpleData name="Latitude">42.375</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12274150999998,42.37503829,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">46</SimpleData>
+					<SimpleData name="Street">Pleasant St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">40&apos; N of Pleasant Place</SimpleData>
+					<SimpleData name="To">60&apos; N of Pleasant St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1988-006</SimpleData>
+					<SimpleData name="Longitude">-71.1084</SimpleData>
+					<SimpleData name="Latitude">42.3637</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10842511,42.36372882000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">830</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">24&apos; E of Sellers St.</SimpleData>
+					<SimpleData name="To">44&apos; E of Sellers St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1995-046</SimpleData>
+					<SimpleData name="Longitude">-71.1067</SimpleData>
+					<SimpleData name="Latitude">42.367</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10665635999999,42.36702885,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">32</SimpleData>
+					<SimpleData name="Street">Quincy St (Opp Fogg Musuem)</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">216&apos; S of Broadway</SimpleData>
+					<SimpleData name="To">256&apos; S of Broadway</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2009-002</SimpleData>
+					<SimpleData name="Longitude">-71.1144</SimpleData>
+					<SimpleData name="Latitude">42.3742</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11444377000001,42.37417822000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">831</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">37&apos; W of Bigelow St.</SimpleData>
+					<SimpleData name="To">54&apos; W of Bigelow St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1992-014</SimpleData>
+					<SimpleData name="Longitude">-71.1065</SimpleData>
+					<SimpleData name="Latitude">42.3672</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10646142000002,42.36721119999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">896</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">174&apos; E of Hancock St.</SimpleData>
+					<SimpleData name="To">194&apos; of Hancock St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1987-000</SimpleData>
+					<SimpleData name="Longitude">-71.1083</SimpleData>
+					<SimpleData name="Latitude">42.368</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10826363000001,42.36801385999997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1001</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">172&apos; W of Dana St.</SimpleData>
+					<SimpleData name="To">192&apos; W of Dana St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-024</SimpleData>
+					<SimpleData name="Longitude">-71.1113</SimpleData>
+					<SimpleData name="Latitude">42.3695</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11134060000001,42.36947841000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">42</SimpleData>
+					<SimpleData name="Street">Church St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">57&apos; S of Palmer St</SimpleData>
+					<SimpleData name="To">97&apos; S of Palmer St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2009-002</SimpleData>
+					<SimpleData name="Longitude">-71.1205</SimpleData>
+					<SimpleData name="Latitude">42.3743</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12051067,42.37426485,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">Main St, Opp 300 Tech Square</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">107&apos; E of Albany St</SimpleData>
+					<SimpleData name="To">87&apos; E of Albany St</SimpleData>
+					<SimpleData name="Install_Effective_Date">10/11/2013</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2013-007</SimpleData>
+					<SimpleData name="Longitude">-71.0916</SimpleData>
+					<SimpleData name="Latitude">42.3627</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09159944,42.36274765000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">23</SimpleData>
+					<SimpleData name="Street">Arrow St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">353&apos; W of Mass Ave.</SimpleData>
+					<SimpleData name="To">378&apos; W of Mass Ave.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1995-005</SimpleData>
+					<SimpleData name="Longitude">-71.1154</SimpleData>
+					<SimpleData name="Latitude">42.3715</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11543464000002,42.37154498000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1</SimpleData>
+					<SimpleData name="Street">North Point Blvd</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">100&apos; E of Education St</SimpleData>
+					<SimpleData name="To">120&apos; E of Education</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2010-005</SimpleData>
+					<SimpleData name="Longitude">-71.069</SimpleData>
+					<SimpleData name="Latitude">42.3691</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.06896184999999,42.36914344999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">27</SimpleData>
+					<SimpleData name="Street">Church St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">21&apos; N of Palmer St</SimpleData>
+					<SimpleData name="To">21&apos; N of Palmer St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2009-002</SimpleData>
+					<SimpleData name="Longitude">-71.1201</SimpleData>
+					<SimpleData name="Latitude">42.3745</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12007539,42.37445203999997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">419</SimpleData>
+					<SimpleData name="Street">Concord Ave (opp. 415 in front of ballfield)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">20&apos; E of Fern St.</SimpleData>
+					<SimpleData name="To">41&apos; E of Fern St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2007-011</SimpleData>
+					<SimpleData name="Longitude">-71.1385</SimpleData>
+					<SimpleData name="Latitude">42.3859</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.13854351000001,42.38594558,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">50</SimpleData>
+					<SimpleData name="Street">Churchill Ave</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">118&apos; E of ECL Muller</SimpleData>
+					<SimpleData name="To">138&apos; E of ECL Muller Ave.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1994-007</SimpleData>
+					<SimpleData name="Longitude">-71.1322</SimpleData>
+					<SimpleData name="Latitude">42.4004</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.13219589000002,42.40044152000004,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">311</SimpleData>
+					<SimpleData name="Street">Hovey Ave (For 1585 Cambridge St)</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">364&apos; S of Magnolia St.</SimpleData>
+					<SimpleData name="To">398&apos; S of Magnolia Ave.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1993-031</SimpleData>
+					<SimpleData name="Longitude">-71.1077</SimpleData>
+					<SimpleData name="Latitude">42.3763</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10767600000001,42.37630623,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">40-50</SimpleData>
+					<SimpleData name="Street">Ames St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">600&apos; N of Amherest St.</SimpleData>
+					<SimpleData name="To">670&apos; N of Amherest St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-002</SimpleData>
+					<SimpleData name="Longitude">-71.0882</SimpleData>
+					<SimpleData name="Latitude">42.3615</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08818260000001,42.36154312999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">385</SimpleData>
+					<SimpleData name="Street">Third St (For One Broadway)</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">25&apos; N of Broadway</SimpleData>
+					<SimpleData name="To">73&apos; N of Broadway</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-107</SimpleData>
+					<SimpleData name="Longitude">-71.0834</SimpleData>
+					<SimpleData name="Latitude">42.3636</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08343551999999,42.36361010999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1334</SimpleData>
+					<SimpleData name="Street">Cambridge St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">38&apos; E of E curb line Ext-Oak St.</SimpleData>
+					<SimpleData name="To">to 58&apos; E of curbline ext Oak</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2009-002</SimpleData>
+					<SimpleData name="Longitude">-71.0998</SimpleData>
+					<SimpleData name="Latitude">42.3735</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09975926000001,42.37349326000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">51</SimpleData>
+					<SimpleData name="Street">Belmont St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">NA</SimpleData>
+					<SimpleData name="To">30&apos; W of Holworthy</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2009-003</SimpleData>
+					<SimpleData name="Longitude">-71.1522</SimpleData>
+					<SimpleData name="Latitude">42.3751</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.15218137000001,42.37507885,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">Lot #11</SimpleData>
+					<SimpleData name="Street">Lot #11, Cambridge St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">21&apos; S of Cambridge St.</SimpleData>
+					<SimpleData name="To">45&apos; S of Cambridge St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">4/21/1997</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1997-009</SimpleData>
+					<SimpleData name="Longitude">-71.094</SimpleData>
+					<SimpleData name="Latitude">42.3725</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09396971,42.3725066,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">235</SimpleData>
+					<SimpleData name="Street">Albany St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">140&apos; S of Pacific St.</SimpleData>
+					<SimpleData name="To">158&apos; S of Pacific St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2008-008</SimpleData>
+					<SimpleData name="Longitude">-71.1007</SimpleData>
+					<SimpleData name="Latitude">42.3589</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10070157,42.35886463999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">40</SimpleData>
+					<SimpleData name="Street">Thorndike St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">20&apos; E of Third St.</SimpleData>
+					<SimpleData name="To">40&apos; E of Third St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1978-030</SimpleData>
+					<SimpleData name="Longitude">-71.0796</SimpleData>
+					<SimpleData name="Latitude">42.3695</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.07956231999999,42.36947906000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">78</SimpleData>
+					<SimpleData name="Street">Mt. Auburn St (For Holyoke Center)</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">20&apos;E of Dunster St</SimpleData>
+					<SimpleData name="To">60&apos;E of Dunster St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">NA</SimpleData>
+					<SimpleData name="Longitude">-71.1191</SimpleData>
+					<SimpleData name="Latitude">42.3721</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11912949000001,42.37207455000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">20</SimpleData>
+					<SimpleData name="Street">Ames St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">25&apos; S of Broadway</SimpleData>
+					<SimpleData name="To">46&apos; S of Broadway</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2011-006</SimpleData>
+					<SimpleData name="Longitude">-71.0879</SimpleData>
+					<SimpleData name="Latitude">42.361</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08788165999998,42.36097821999997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">169</SimpleData>
+					<SimpleData name="Street">Walker St (For Peabody School)</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">213&apos; E of Linnaean St.</SimpleData>
+					<SimpleData name="To">224&apos; E of Linnaean St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2000-050</SimpleData>
+					<SimpleData name="Longitude">-71.1246</SimpleData>
+					<SimpleData name="Latitude">42.3825</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12458935000001,42.38254544,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">66</SimpleData>
+					<SimpleData name="Street">Sherman St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">14&apos; N of Cadbury Rd.</SimpleData>
+					<SimpleData name="To">34&apos; N of Cadbury Rd.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2007-003</SimpleData>
+					<SimpleData name="Longitude">-71.1316</SimpleData>
+					<SimpleData name="Latitude">42.3875</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.13155681000002,42.38751003999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1680</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">61&apos; N of Hudson St.</SimpleData>
+					<SimpleData name="To">85&apos; N of Hudson St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1997-000</SimpleData>
+					<SimpleData name="Longitude">-71.1198</SimpleData>
+					<SimpleData name="Latitude">42.3824</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11984078999998,42.38242399000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">222</SimpleData>
+					<SimpleData name="Street">Harvard St (For church on Norfolk St)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">124&apos; W of Norfolk St</SimpleData>
+					<SimpleData name="To">164&apos; W of Norfolk St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2006-007</SimpleData>
+					<SimpleData name="Longitude">-71.1013</SimpleData>
+					<SimpleData name="Latitude">42.3681</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10134975,42.36807521000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">215</SimpleData>
+					<SimpleData name="Street">First St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">40&apos;N of Cambridgeside Pl</SimpleData>
+					<SimpleData name="To">57&apos;N of Cambridgeside Pl</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2011-003</SimpleData>
+					<SimpleData name="Longitude">-71.0785</SimpleData>
+					<SimpleData name="Latitude">42.3642</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.07854374,42.36420635,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">Second St (For 43 Thorndike St)</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">126&apos; N of Thorndike St.</SimpleData>
+					<SimpleData name="To">145&apos; N of Thorndike St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2002-020</SimpleData>
+					<SimpleData name="Longitude">-71.0792</SimpleData>
+					<SimpleData name="Latitude">42.3696</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.07923341,42.36962773000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">20</SimpleData>
+					<SimpleData name="Street">Garden St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">94&apos; N of Berkeley St.</SimpleData>
+					<SimpleData name="To">124&apos; N of Berkeley St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1993-011</SimpleData>
+					<SimpleData name="Longitude">-71.1234</SimpleData>
+					<SimpleData name="Latitude">42.3777</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12336758999999,42.37771768999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">727</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">20&apos; W of Temple St.</SimpleData>
+					<SimpleData name="To">40&apos; W of Temple St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1991-000</SimpleData>
+					<SimpleData name="Longitude">-71.1049</SimpleData>
+					<SimpleData name="Latitude">42.3663</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10489926999999,42.36629289000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">201</SimpleData>
+					<SimpleData name="Street">Fawcett St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">86&apos; N of Concord Ave</SimpleData>
+					<SimpleData name="To">126&apos; N of Concord Ave</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2010-007</SimpleData>
+					<SimpleData name="Longitude">-71.15</SimpleData>
+					<SimpleData name="Latitude">42.3936</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.14996831000001,42.39360228000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">5</SimpleData>
+					<SimpleData name="Street">Cadbury Rd</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">160&apos; W of Wood St.</SimpleData>
+					<SimpleData name="To">184&apos; W of Wood St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1990-014</SimpleData>
+					<SimpleData name="Longitude">-71.1306</SimpleData>
+					<SimpleData name="Latitude">42.3877</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.13063474,42.38769744999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1967</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">20&apos; N of Allen St.</SimpleData>
+					<SimpleData name="To">36&apos; N of Allen St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-000</SimpleData>
+					<SimpleData name="Longitude">-71.1205</SimpleData>
+					<SimpleData name="Latitude">42.3901</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12046551,42.39006551999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">291</SimpleData>
+					<SimpleData name="Street">Cambridge St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">276&apos; W of Third St.</SimpleData>
+					<SimpleData name="To">246&apos; W of Third St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1987-000</SimpleData>
+					<SimpleData name="Longitude">-71.0807</SimpleData>
+					<SimpleData name="Latitude">42.3712</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08071760999999,42.37123145000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">176</SimpleData>
+					<SimpleData name="Street">Education St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">198&apos; S of North Point Blvd</SimpleData>
+					<SimpleData name="To">238&apos; S of North Point Blvd</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2010-005</SimpleData>
+					<SimpleData name="Longitude">-71.0708</SimpleData>
+					<SimpleData name="Latitude">42.3698</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.07076777,42.36984650000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">12</SimpleData>
+					<SimpleData name="Street">Oxford St (For Harvard Buildings)</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">355&apos; N of Kirkland St</SimpleData>
+					<SimpleData name="To">373&apos; N of Kirkland St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2008-005</SimpleData>
+					<SimpleData name="Longitude">-71.1159</SimpleData>
+					<SimpleData name="Latitude">42.3773</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11592356999999,42.37725961999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">11</SimpleData>
+					<SimpleData name="Street">Garden St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">91&apos; W of Mason St</SimpleData>
+					<SimpleData name="To">131&apos; W of Mason St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1010-006</SimpleData>
+					<SimpleData name="Longitude">-71.1227</SimpleData>
+					<SimpleData name="Latitude">42.3767</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12268096,42.37672426000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1720-1722</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">295&apos; S of Linnaen St.</SimpleData>
+					<SimpleData name="To">334&apos; S of Linnaean St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-000</SimpleData>
+					<SimpleData name="Longitude">-71.1197</SimpleData>
+					<SimpleData name="Latitude">42.3838</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11969905999999,42.38383988999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1</SimpleData>
+					<SimpleData name="Street">Athenaeum St (For 245 First St)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">54&apos; W of First St.</SimpleData>
+					<SimpleData name="To">30&apos; W of First St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-024</SimpleData>
+					<SimpleData name="Longitude">-71.0793</SimpleData>
+					<SimpleData name="Latitude">42.3637</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.07928226999999,42.36372945999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">700</SimpleData>
+					<SimpleData name="Street">Huron Ave</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">526&apos; W of Cushing St.</SimpleData>
+					<SimpleData name="To">562&apos; W of Cushing St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1989-020</SimpleData>
+					<SimpleData name="Longitude">-71.1551</SimpleData>
+					<SimpleData name="Latitude">42.381</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.1550897,42.38099247,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">32</SimpleData>
+					<SimpleData name="Street">Ash St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">70&apos; N of Memorial Dr</SimpleData>
+					<SimpleData name="To">90&apos; N of Memorial Dr</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2013-004</SimpleData>
+					<SimpleData name="Longitude">-71.1257</SimpleData>
+					<SimpleData name="Latitude">42.3739</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12566617000002,42.37388339,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">326</SimpleData>
+					<SimpleData name="Street">Inman St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">44&apos; S of Inman Pl.</SimpleData>
+					<SimpleData name="To">84&apos; S of Inman St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1990-031</SimpleData>
+					<SimpleData name="Longitude">-71.0867</SimpleData>
+					<SimpleData name="Latitude">42.3623</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08671854000001,42.36234890999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">85</SimpleData>
+					<SimpleData name="Street">Sherman St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">inside the lot for</SimpleData>
+					<SimpleData name="To">Danehy Park</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1991-017</SimpleData>
+					<SimpleData name="Longitude">-71.1325</SimpleData>
+					<SimpleData name="Latitude">42.3882</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.13248058000001,42.38821651000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">100</SimpleData>
+					<SimpleData name="Street">Smith Pl</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">55&apos; S of Fawcett St</SimpleData>
+					<SimpleData name="To">75&apos; S of Fawcett St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2009-002</SimpleData>
+					<SimpleData name="Longitude">-71.1504</SimpleData>
+					<SimpleData name="Latitude">42.3932</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.15036114,42.39320548000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">St Peter&apos;s Field Lot</SimpleData>
+					<SimpleData name="Side_of_Street">NA</SimpleData>
+					<SimpleData name="From">28&apos; W of Sherman St</SimpleData>
+					<SimpleData name="To">NA</SimpleData>
+					<SimpleData name="Install_Effective_Date">11/23/1992</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1992-036</SimpleData>
+					<SimpleData name="Longitude">-71.1328</SimpleData>
+					<SimpleData name="Latitude">42.3876</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.13284686,42.38762888999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">604</SimpleData>
+					<SimpleData name="Street">Third St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">40&apos; N of Broadway</SimpleData>
+					<SimpleData name="To">90&apos; N of Broadway</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2011-006</SimpleData>
+					<SimpleData name="Longitude">-71.0827</SimpleData>
+					<SimpleData name="Latitude">42.3649</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08267850000001,42.36492608999996,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">795</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">100&apos; W of Inman St.</SimpleData>
+					<SimpleData name="To">121&apos; W of Inman St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1999-040</SimpleData>
+					<SimpleData name="Longitude">-71.1058</SimpleData>
+					<SimpleData name="Latitude">42.367</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10575228999998,42.36703662000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">688</SimpleData>
+					<SimpleData name="Street">Huron Ave (For VFW)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">314&apos; W of Cushing St.</SimpleData>
+					<SimpleData name="To">346&apos; W of Cushing St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1985-000</SimpleData>
+					<SimpleData name="Longitude">-71.1543</SimpleData>
+					<SimpleData name="Latitude">42.3804</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.15430287,42.380363,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1</SimpleData>
+					<SimpleData name="Street">Amherst St (MIT Street)</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">64&apos; S of Mass Ave</SimpleData>
+					<SimpleData name="To">94&apos; S of Mass Ave</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1983-014</SimpleData>
+					<SimpleData name="Longitude">-71.0963</SimpleData>
+					<SimpleData name="Latitude">42.3571</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09630240999999,42.35714767999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1640</SimpleData>
+					<SimpleData name="Street">Cambridge St (@ War Memorial)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">36&apos; E of Ecl Ext. Of Trowbridge St.</SimpleData>
+					<SimpleData name="To">12&apos; W of Ecl Ext pf Trowbridge St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1983-003</SimpleData>
+					<SimpleData name="Longitude">-71.1093</SimpleData>
+					<SimpleData name="Latitude">42.3747</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10932413,42.37469028999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">Lot #8 Pleasant St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">90&apos; E of Pleasant St.</SimpleData>
+					<SimpleData name="To">114&apos; E of Pleasant St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">4/21/1997</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1997-009</SimpleData>
+					<SimpleData name="Longitude">-71.107</SimpleData>
+					<SimpleData name="Latitude">42.3662</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10699314,42.36618763000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">2</SimpleData>
+					<SimpleData name="Street">Charles St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">22&apos; W of First St.</SimpleData>
+					<SimpleData name="To">49&apos; W of First St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2006-005</SimpleData>
+					<SimpleData name="Longitude">-71.0782</SimpleData>
+					<SimpleData name="Latitude">42.3672</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.07817213,42.36719201,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">602</SimpleData>
+					<SimpleData name="Street">Third St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">73&apos; S of Linsky Way</SimpleData>
+					<SimpleData name="To">28&apos; S of Linsky Way</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-107</SimpleData>
+					<SimpleData name="Longitude">-71.0821</SimpleData>
+					<SimpleData name="Latitude">42.3659</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08209457,42.36594024999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">opp. #285</SimpleData>
+					<SimpleData name="Street">Third St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">73&apos; S of Linsky Way</SimpleData>
+					<SimpleData name="To">28&apos; S of Linsky Way</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-107</SimpleData>
+					<SimpleData name="Longitude">-71.083</SimpleData>
+					<SimpleData name="Latitude">42.365</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08297782999999,42.36496961000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">St Peter&apos;s Field Lot</SimpleData>
+					<SimpleData name="Side_of_Street">NA</SimpleData>
+					<SimpleData name="From">132&apos; E of Garden St.</SimpleData>
+					<SimpleData name="To">NA</SimpleData>
+					<SimpleData name="Install_Effective_Date">11/23/1992</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1992-036</SimpleData>
+					<SimpleData name="Longitude">-71.133</SimpleData>
+					<SimpleData name="Latitude">42.3876</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.13302817000002,42.38758718000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">321</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">50&apos; W of Village St.</SimpleData>
+					<SimpleData name="To">72&apos; W of Village St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2008-007</SimpleData>
+					<SimpleData name="Longitude">-71.0987</SimpleData>
+					<SimpleData name="Latitude">42.3626</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09866898999999,42.36259950999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">NA</SimpleData>
+					<SimpleData name="Street">Portland St (Opp. Washington St)</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">260&apos; N of Main St.</SimpleData>
+					<SimpleData name="To">278&apos; N of Main St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-114</SimpleData>
+					<SimpleData name="Longitude">-71.0931</SimpleData>
+					<SimpleData name="Latitude">42.3631</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09306192000001,42.36306900999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">302</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">233&apos; E of Blanche St.</SimpleData>
+					<SimpleData name="To">252&apos; E of Blanche St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2008-007</SimpleData>
+					<SimpleData name="Longitude">-71.0984</SimpleData>
+					<SimpleData name="Latitude">42.3621</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09842377,42.36210002999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">218</SimpleData>
+					<SimpleData name="Street">Fifth St (For 195 Binney St)</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">65&apos; N of Binney St</SimpleData>
+					<SimpleData name="To">86&apos; N of Binney St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2000-019</SimpleData>
+					<SimpleData name="Longitude">-71.0836</SimpleData>
+					<SimpleData name="Latitude">42.3676</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08363318000001,42.36756173000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1201</SimpleData>
+					<SimpleData name="Street">Franklin St (Public Library)</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">58&apos; W of Pearl St</SimpleData>
+					<SimpleData name="To">101&apos; W of Pearl St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2012-010</SimpleData>
+					<SimpleData name="Longitude">-71.1042</SimpleData>
+					<SimpleData name="Latitude">42.3641</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10423647000002,42.36410076999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">11</SimpleData>
+					<SimpleData name="Street">Garden St (For H.U.)</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">58&apos; North of Mason St</SimpleData>
+					<SimpleData name="To">118&apos; North of Mason St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-109</SimpleData>
+					<SimpleData name="Longitude">-71.1227</SimpleData>
+					<SimpleData name="Latitude">42.3767</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12268096,42.37672426000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">344</SimpleData>
+					<SimpleData name="Street">Broadway</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">60&apos; W of Inman St.</SimpleData>
+					<SimpleData name="To">80&apos; W of Inman St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2013-004</SimpleData>
+					<SimpleData name="Longitude">-71.1034</SimpleData>
+					<SimpleData name="Latitude">42.3701</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10338235,42.37008156999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">424</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">37&apos; S of Day St</SimpleData>
+					<SimpleData name="To">56&apos; S of Day St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2011-002</SimpleData>
+					<SimpleData name="Longitude">-71.1007</SimpleData>
+					<SimpleData name="Latitude">42.3634</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10065209,42.36339911,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1306</SimpleData>
+					<SimpleData name="Street">Green St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">58&apos; W of Western Ave</SimpleData>
+					<SimpleData name="To">78&apos; W of Western Ave</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2013-005</SimpleData>
+					<SimpleData name="Longitude">-71.1055</SimpleData>
+					<SimpleData name="Latitude">42.3655</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10548746000001,42.36546815000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">2310</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">29&apos; N of Rice St.</SimpleData>
+					<SimpleData name="To">47&apos; N of Rice St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-111</SimpleData>
+					<SimpleData name="Longitude">-71.1283</SimpleData>
+					<SimpleData name="Latitude">42.3955</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12832915,42.39547665999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">2</SimpleData>
+					<SimpleData name="Street">Felton St</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">100&apos; S of Cambridge St.</SimpleData>
+					<SimpleData name="To">120&apos; S of Cambridge St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1992-038</SimpleData>
+					<SimpleData name="Longitude">-71.1124</SimpleData>
+					<SimpleData name="Latitude">42.3743</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11243629999998,42.37427364,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">122</SimpleData>
+					<SimpleData name="Street">Mt. Auburn St</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">25&apos; E of University Rd</SimpleData>
+					<SimpleData name="To">65&apos; E of University Rd.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2001-063</SimpleData>
+					<SimpleData name="Longitude">-71.1226</SimpleData>
+					<SimpleData name="Latitude">42.3731</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12264207999999,42.37312467000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">353</SimpleData>
+					<SimpleData name="Street">Huron Ave</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">26&apos; W of Chilton St.</SimpleData>
+					<SimpleData name="To">46&apos; W of Chilton St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1998-019</SimpleData>
+					<SimpleData name="Longitude">-71.1383</SimpleData>
+					<SimpleData name="Latitude">42.3813</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.13829945999998,42.38133240999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1237</SimpleData>
+					<SimpleData name="Street">Cambridge St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">169&apos; W of Sumner Rd.</SimpleData>
+					<SimpleData name="To">199&apos; W of Sumner Rd.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-114</SimpleData>
+					<SimpleData name="Longitude">-71.0982</SimpleData>
+					<SimpleData name="Latitude">42.3735</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09818954000001,42.37347327999997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">119</SimpleData>
+					<SimpleData name="Street">Mt. Auburn St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">110&apos; W of Miifflin Pl.</SimpleData>
+					<SimpleData name="To">148&apos; W of Mifflin Pl.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-000</SimpleData>
+					<SimpleData name="Longitude">-71.1036</SimpleData>
+					<SimpleData name="Latitude">42.3628</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10360614999999,42.36282991999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">77</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">388&apos; E of Vassar St</SimpleData>
+					<SimpleData name="To">388&apos; E of Vassar St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2008-007</SimpleData>
+					<SimpleData name="Longitude">-71.0933</SimpleData>
+					<SimpleData name="Latitude">42.3591</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09333942000001,42.35912824999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1280</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">40&apos; W of Plympton St.</SimpleData>
+					<SimpleData name="To">86&apos; W of Plympton St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-000</SimpleData>
+					<SimpleData name="Longitude">-71.1168</SimpleData>
+					<SimpleData name="Latitude">42.3727</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.11678396000001,42.37268312999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">402</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">170&apos; E of Douglass St.</SimpleData>
+					<SimpleData name="To">190&apos; E of Douglass St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1998-019</SimpleData>
+					<SimpleData name="Longitude">-71.1003</SimpleData>
+					<SimpleData name="Latitude">42.3631</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10028285999999,42.3631219,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">208</SimpleData>
+					<SimpleData name="Street">Cambridge St (Front of court house)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">132&apos; E of Third St.</SimpleData>
+					<SimpleData name="To">171&apos; E of Third St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-107</SimpleData>
+					<SimpleData name="Longitude">-71.0792</SimpleData>
+					<SimpleData name="Latitude">42.3708</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.07924123000001,42.37078808999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1309</SimpleData>
+					<SimpleData name="Street">Cambridge St</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">16&apos; E of Oak St.</SimpleData>
+					<SimpleData name="To">44&apos; E of Oak St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1990-000</SimpleData>
+					<SimpleData name="Longitude">-71.0995</SimpleData>
+					<SimpleData name="Latitude">42.3736</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09950705999998,42.37364930000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">146</SimpleData>
+					<SimpleData name="Street">Norfolk St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">24&apos; S of Hampshire St.</SimpleData>
+					<SimpleData name="To">44&apos; S of Hampshire St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2008-003</SimpleData>
+					<SimpleData name="Longitude">-71.0996</SimpleData>
+					<SimpleData name="Latitude">42.3678</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09959469,42.36778095,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1</SimpleData>
+					<SimpleData name="Street">Linsky Way (For 215 First St)</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">168&apos; W of First St.</SimpleData>
+					<SimpleData name="To">221&apos; W of First St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1994-000</SimpleData>
+					<SimpleData name="Longitude">-71.0802</SimpleData>
+					<SimpleData name="Latitude">42.365</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.08022609999999,42.36495882999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">57</SimpleData>
+					<SimpleData name="Street">JFK St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">68&apos; S of Winthrop St</SimpleData>
+					<SimpleData name="To">22&apos; S of Winthrop St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-000</SimpleData>
+					<SimpleData name="Longitude">-71.1207</SimpleData>
+					<SimpleData name="Latitude">42.372</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12073245000001,42.37202966000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">Lot #6</SimpleData>
+					<SimpleData name="Street">Lot #6, Bishop Allen Dr</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">Eastern Traffic Island 78&apos; W of Bishop Allen Dr.</SimpleData>
+					<SimpleData name="To">Bishop Allen Drive to 120&apos; S of Bishop Allen Drive</SimpleData>
+					<SimpleData name="Install_Effective_Date">5/18/1990</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1990-011</SimpleData>
+					<SimpleData name="Longitude">-71.1001</SimpleData>
+					<SimpleData name="Latitude">42.3642</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10009946,42.36416654999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">550</SimpleData>
+					<SimpleData name="Street">Mass Ave</SimpleData>
+					<SimpleData name="Side_of_Street">S</SimpleData>
+					<SimpleData name="From">48&apos; E of Pearl St</SimpleData>
+					<SimpleData name="To">70&apos; E of Pearl St</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2013-008</SimpleData>
+					<SimpleData name="Longitude">-71.1024</SimpleData>
+					<SimpleData name="Latitude">42.3644</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.1023756,42.36442126,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">1957</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">E</SimpleData>
+					<SimpleData name="From">20&apos; S of Allen St.</SimpleData>
+					<SimpleData name="To">42&apos; S of Allen St.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">1986-000</SimpleData>
+					<SimpleData name="Longitude">-71.1203</SimpleData>
+					<SimpleData name="Latitude">42.3899</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.12026410999998,42.38990237,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">77</SimpleData>
+					<SimpleData name="Street">Massachusetts Ave</SimpleData>
+					<SimpleData name="Side_of_Street">N</SimpleData>
+					<SimpleData name="From">470&apos; W of Memorial Dr.</SimpleData>
+					<SimpleData name="To">512&apos; W of Memorial Dr.</SimpleData>
+					<SimpleData name="Install_Effective_Date">NA</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2008-007</SimpleData>
+					<SimpleData name="Longitude">-71.0933</SimpleData>
+					<SimpleData name="Latitude">42.3591</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.09333942000001,42.35912824999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Public_Handicap_Parking_Spots_SSSSSSSDD">
+					<SimpleData name="Street_Number">15</SimpleData>
+					<SimpleData name="Street">Amesbury St</SimpleData>
+					<SimpleData name="Side_of_Street">W</SimpleData>
+					<SimpleData name="From">171&apos; N of Memorial Dr.</SimpleData>
+					<SimpleData name="To">209&apos; N of Memorial Dr.</SimpleData>
+					<SimpleData name="Install_Effective_Date">12/30/2005</SimpleData>
+					<SimpleData name="Install_Regulation_Number">2005-115</SimpleData>
+					<SimpleData name="Longitude">-71.1048</SimpleData>
+					<SimpleData name="Latitude">42.3542</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.10480209000001,42.35417796999999,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
