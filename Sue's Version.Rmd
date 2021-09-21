@@ -82,8 +82,10 @@ theme_map() +
   theme(legend.position = "right",
     legend.background = element_rect(fill = alpha("white", 0.5), 
                                          color = "gray"))
-
+```
+```{r}
 avg_comparking_dens <- mean(nhoods$comparking_dens)
+avg_comparking_dens
 ```
 
 
@@ -110,9 +112,13 @@ theme_map() +
   theme(legend.position = "right",
     legend.background = element_rect(fill = alpha("white", 0.5), 
                                          color = "gray"))
-
-avg_comparking_dens_cblocks <- mean(cblocks$comparking_dens)
 ```
+```{r}
+avg_comparking_dens_cblocks <- mean(cblocks$comparking_dens)
+avg_comparking_dens_cblocks
+```
+
+
 ```{r}
 wards <- wards %>%
   mutate(num_comparking = lengths(st_covers(wards, comparking))) %>%
@@ -134,8 +140,9 @@ theme_map() +
   theme(legend.position = "right",
     legend.background = element_rect(fill = alpha("white", 0.5), 
                                          color = "gray"))
-
+```
+```{r}
 avg_comparking_dens_wards <- mean(wards$comparking_dens)
+avg_comparking_dens_wards
 ```
 ```
-
