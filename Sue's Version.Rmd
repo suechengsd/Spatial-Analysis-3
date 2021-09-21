@@ -153,27 +153,3 @@ avg_comparking_dens_wards <- mean(wards$comparking_dens)
 avg_comparking_dens_wards
 ```
 
-
-```{r}
-
-pspots <- st_read(dsn = "https://data.cambridgema.gov/api/geospatial/6h7q-rwhf?method=export&format=KML")
-
-plot(pspots)
-
-multi.p <- st_cast(pspots, "MULTIPOINT")
-
-my.points <- multi.p %>%  group_by(geometry) %>% st_cast("POINT")
-
-plot(my.points)
-
-my.points
-
-my.points.A <- my.points %>% filter(binomial == 'A') %>% as('Spatial')
-my.points.B <- my.points %>% filter(binomial == 'B') %>% as('Spatial')
-eoo.A <- my.points.A %>% makeEOO()
-eoo.B <- my.points.A %>% makeEOO()
-
-
-
-```
-```
