@@ -1,0 +1,141 @@
+---
+title: "Sue's Version"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+library(sf)
+library(tidyverse)
+library(ggthemes)
+library(ggspatial)
+library(units)
+library(nngeo)
+```
+
+```{r}
+nhoods <- st_read("https://data.cambridgema.gov/api/geospatial/k3pi-9823?method=export&format=KML", 
+                  quiet = TRUE) 
+
+cblocks <- st_read("https://data.cambridgema.gov/api/geospatial/gsft-4pvq?method=export&format=KML", 
+                 quiet = TRUE)
+
+wards <- st_read("https://data.cambridgema.gov/api/geospatial/wb9r-yksd?method=export&format=KML",
+                  quiet = TRUE)
+
+comparking <- st_read("https://data.cambridgema.gov/api/geospatial/t8tm-muns?method=export&format=KML", 
+                   quiet = TRUE) 
+
+```
+
+```{r}
+MA_state_plane <- "+proj=lcc +lat_1=41.71666666666667 +lat_2=42.68333333333333 +lat_0=41 +lon_0=-71.5 +x_0=200000 +y_0=750000 +ellps=GRS80 +units=m +no_defs"
+
+nhoods <- nhoods %>%
+  st_transform(MA_state_plane)
+
+cblocks <- cblocks %>%
+  st_transform(MA_state_plane)
+
+wards <- wards %>%
+  st_transform(MA_state_plane)
+
+comparking <- comparking %>%
+  st_transform(MA_state_plane)
+```
+
+```{r}
+ggplot(comparking) +
+  geom_sf(color = "blue", size = 1) +
+  geom_sf(data= nhoods, fill = NA, color = "gray") +
+  theme_map() +
+  annotation_scale()
+```
+
+The average density of B points in each C polygon.
+
+```{r}
+nhoods <- nhoods %>%
+  mutate(num_comparking = lengths(st_covers(nhoods, comparking)))
+
+nhoods <- nhoods %>%
+  mutate(area = set_units(st_area(nhoods), km^2)) %>%
+  mutate(comparking_dens = as.numeric(num_comparking / area))
+
+ggplot(nhoods) +
+  geom_sf(color = NA, 
+          aes(fill = comparking_dens)) +
+  scale_fill_viridis_c(name = 
+                           "Cambridge Neighborhoods\nby Commercial Parking Lot Density",
+                       breaks = breaks <- seq(0, 8, by = 1),
+                       labels = paste(prettyNum(breaks, big.mark = ","),
+                                      "Commercial Parking Lots per Square Km")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_minimal()) +
+theme_map() +
+  theme(legend.position = "right",
+    legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+
+avg_comparking_dens <- mean(nhoods$comparking_dens)
+```
+
+
+The average density of B points in each D polygon.
+
+```{r}
+cblocks <- cblocks %>%
+  mutate(num_comparking = lengths(st_covers(cblocks, comparking))) %>%
+  mutate(area = set_units(st_area(cblocks), km^2)) %>%
+  mutate(comparking_dens = as.numeric(num_comparking / area))
+
+ggplot(cblocks) +
+  geom_sf(color = NA, 
+          aes(fill = comparking_dens)) +
+    scale_fill_viridis_c(name = 
+                           "Cambridge Census Blocks\nby Commercial Parking Lot Density",
+                       breaks = breaks <- seq(0, 250, by = 50),
+                       labels = paste(prettyNum(breaks, big.mark = ","),
+                                      "Commercial Parking Lots per Square Km")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_minimal()) +
+theme_map() +
+  theme(legend.position = "right",
+    legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+
+avg_comparking_dens_cblocks <- mean(cblocks$comparking_dens)
+```
+```{r}
+wards <- wards %>%
+  mutate(num_comparking = lengths(st_covers(wards, comparking))) %>%
+  mutate(area = set_units(st_area(wards), km^2)) %>%
+  mutate(comparking_dens = as.numeric(num_comparking / area))
+
+ggplot(wards) +
+  geom_sf(color = NA,
+          aes(fill = comparking_dens)) +
+    scale_fill_viridis_c(name = 
+                           "Cambridge Election Wards\nby Commercial Parking Lot Density",
+                       breaks = breaks <- seq(0, 20, by = 2),
+                       labels = paste(prettyNum(breaks, big.mark = ","),
+                                      "Commercial Parking Lots per Square Km")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_minimal()) +
+theme_map() +
+  theme(legend.position = "right",
+    legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+
+avg_comparking_dens_wards <- mean(wards$comparking_dens)
+```
+```
+
