@@ -1,0 +1,344 @@
+---
+title: "Spatial Analysis Assignment 3"
+output: html_document
+---
+Anusha Chitturi, Rania Karamallah, Sue Chen
+
+## Introduction
+
+Through these maps, we try to analyze the density of public artworks in neighborhoods and ward precincts of Cambridge City and further correlate this with a public school dataset to study the access to public artworks in school neighborhoods. 
+
+MAP 1 shows the number of public artworks within 500 meters of all public schools 
+
+MAP 2 shows the number of public schools within 500 meters of all public artwork
+
+MAP 3 and MAP 4 show the density of public artworks in neighborhoods and ward precincts
+
+MAP 5 and MAP 6 show the density of schools in neighborhoods and ward precincts
+
+These maps show the density of public artworks in Cambridge city's neighborhoods and ward precincts in relation to the density of public schools. We produced maps to show the density of each in order to explore whether there are any patterns in such distributions individually. In producing maps 1 and 2, we brought this analysis together to look at the ability of public school-children to be able to access or be exposed to public art. We looked at neighborhoods and wards as our two polygon layers. In the case of wards, we thought that the analysis could be conducive to the ability of a specific resident to determine a ward without sufficient art and know exactly who to contact to try to address that issue (i.e. the representative of that ward). In the case of neighborhoods, the analysis provides a resident with information on potential community stakeholders, giving them a group to mobilize in order to amplify their message and demand more public art for their neighborhood as a community.
+
+## Contribution Statement
+
+The team met together to discuss the datasets that would be conducive to an interesting analysis. We initially decided to use commercial and municipal parking lots as our point layers to enable us to draw some conclusions about where the government is distributing municipal parking lots and whether there is a relationship to the existence of commercial parking lots in the area. After visualizing the data, we determined that the municipal parking lots are each located in the same place as a certain commercial parking lots. We then made the collective decision to change to using public schools and public art as our point layers to explore the ease of accessing public art for public school-children. Each of us produced 2 of the 6 maps. Anusha and Sue then worked together to produce the written analysis. We would allocate each member 10 points.
+
+## Loading the data
+
+```{r}
+library(sf)
+library(tidyverse)
+library(ggthemes)
+library(ggspatial)
+library(units)
+library(nngeo)
+library(scico)
+```
+
+```{r}
+nhoods <- st_read("https://data.cambridgema.gov/api/geospatial/k3pi-9823?method=export&format=KML", 
+                  quiet = TRUE) 
+
+cblocks <- st_read("https://data.cambridgema.gov/api/geospatial/gsft-4pvq?method=export&format=KML", 
+            quiet = TRUE)
+
+wards <- st_read("https://data.cambridgema.gov/api/geospatial/wb9r-yksd?method=export&format=KML",
+                  quiet = TRUE)
+
+publicschools <- st_read("https://raw.githubusercontent.com/cambridgegis/cambridgegis_data/main/Landmark/Public_Schools/LANDMARK_PublicSchools.geojson", 
+                   quiet = TRUE) 
+
+publicart <- st_read("https://raw.githubusercontent.com/cambridgegis/cambridgegis_data/main/Landmark/Public_Art/LANDMARK_PublicArt.geojson", 
+                     quiet=TRUE)
+
+
+```
+
+## Transforming the data
+```{r}
+MA_state_plane <- "+proj=lcc +lat_1=41.71666666666667 +lat_2=42.68333333333333 +lat_0=41 +lon_0=-71.5 +x_0=200000 +y_0=750000 +ellps=GRS80 +units=m +no_defs"
+
+nhoods <- nhoods %>%
+  st_transform(MA_state_plane)
+
+cblocks <- cblocks %>%
+  st_transform(MA_state_plane)
+
+wards <- wards %>%
+  st_transform(MA_state_plane)
+
+publicschools <- publicschools %>%
+  st_transform(MA_state_plane)
+
+publicart <- publicart %>%
+  st_transform(MA_state_plane)
+```
+
+# MAP 1 shows the number of public artworks within 500 meters of all public schools 
+
+```{r}
+ggplot(wards) +
+  geom_sf(fill = "NA" , size=0.05) +
+  geom_sf(data = publicschools, color = "blue", size = 3) +
+  geom_sf(data= nhoods, fill = NA, color = "black", size=0.3) +
+  geom_sf(data = publicart, fill = "NA", color = "red", size = 1) +
+  theme_map() +
+  annotation_scale()
+```
+## Creating a buffer for Public Schools
+
+```{r}
+school_buffer <- st_buffer(publicschools, dist = 500) %>%
+  st_union()
+
+ggplot(school_buffer) +
+  geom_sf() +
+  theme_map()
+```
+
+```{r}
+
+art_schools <- publicart[school_buffer,]
+
+ggplot(school_buffer) +
+  geom_sf() +
+  geom_sf(data = art_schools, 
+          color = "red", 
+          size = 0.1) +
+  theme_map()
+
+```
+
+```{r}
+publicart <- publicart %>%
+  st_join(art_schools) %>%
+  mutate(by_schools = !is.na(Title.y))
+
+n_art_schools <- sum(publicart$by_schools)
+
+n_art_schools
+```
+```{r}
+n_art <- length(publicart$by_schools)
+
+pct_art_schools <- n_art_schools / n_art
+
+pct_art_schools
+```
+```{r}
+left_side  <- st_bbox(publicart)$xmin
+top_side <- st_bbox(publicart)$ymax
+
+ggplot(nhoods) +
+  geom_sf(fill = "NA", color = "black") +
+  geom_sf(data = publicart, size = 1,
+          aes(color = by_schools)) +
+  scale_color_manual(values = c("red", "blue"),
+          name = "Cambridge Public Art\nby distance to Public Schools", 
+          labels = c("Public Art within 500 meters of a Public School",
+                     "Public Art not within 500 meters of a Public School")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_minimal()) +
+  annotate(geom = "text", x = left_side, 
+           y = top_side, 
+           label = paste("Of the ", 
+                         prettyNum(n_art, big.mark = ","),
+                         " Public Art locations in Cambridge\n", 
+                         prettyNum(n_art_schools, big.mark = ","),
+                         " (", 
+                         prettyNum(100*pct_art_schools, digits = 0),
+                         "%) are within 500\nmeters of a Public School",
+                         sep = ""),
+           hjust = 0, vjust = 0, size = 3) +
+  theme_map() +
+  theme(panel.background = element_rect(fill = "cornsilk1"),
+        legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+```
+
+# MAP 2 shows the number of public schools within 50 meters of all public artwork
+
+## Creating a buffer for Public Art
+
+```{r}
+art_buffer <- st_buffer(publicart, dist = 50) %>%
+  st_union()
+
+ggplot(art_buffer) +
+  geom_sf() +
+  theme_map()
+```
+
+```{r}
+
+Schools_art <- publicschools[art_buffer,]
+
+ggplot(art_buffer) +
+  geom_sf() +
+  geom_sf(data = Schools_art, 
+          color = "red", 
+          size = 0.1) +
+  theme_map()
+
+```
+
+```{r}
+publicschools <- publicschools %>%
+  st_join(Schools_art) %>%
+  mutate(by_art = !is.na(GlobalID.y))
+
+n_schools_art <- sum(publicschools$by_art)
+
+n_schools_art
+```
+```{r}
+n_schools <- length(publicschools$by_art)
+
+pct_schools_art <- n_schools_art / n_schools
+
+pct_schools_art
+```
+
+
+
+```{r}
+left_side  <- st_bbox(publicart)$xmin
+top_side <- st_bbox(publicart)$ymax
+
+ggplot(nhoods) +
+  geom_sf(fill = "NA", color = "black") +
+  geom_sf(data = publicschools, size = 1,
+          aes(color = by_art)) +
+  scale_color_manual(values = c("red", "blue"),
+          name = "Cambridge Public Schools\nby distance to Public Art", 
+          labels = c("Public School within 50 meters of a Public Art Location",
+                     "Public School not within 50 meters of a Public Art Location")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_minimal()) +
+  annotate(geom = "text", x = left_side, 
+           y = top_side, 
+           label = paste("Of the ", 
+                         prettyNum(n_schools, big.mark = ","),
+                         " Public Schools in Cambridge\n", 
+                         prettyNum(n_schools_art, big.mark = ","),
+                         " (", 
+                         prettyNum(100*pct_schools_art, digits = 0),
+                         "%) are within 50\nmeters of a Public Art Location",
+                         sep = ""),
+           hjust = 0, vjust = 0, size = 3) +
+  theme_map() +
+  theme(panel.background = element_rect(fill = "cornsilk1"),
+        legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+```
+
+# MAP 3 and MAP 4 show the density of public artworks in neighborhoods and ward precincts
+
+```{r}
+nhoods <- nhoods %>%
+  mutate(num_publicart = lengths(st_covers(nhoods, publicart)))
+nhoods <- nhoods %>%
+  mutate(area = set_units(st_area(nhoods), km^2)) %>%
+  mutate(p_dens = as.numeric(num_publicart / area))
+```
+
+```{r}
+wards <- wards %>%
+  mutate(num_publicart1 = lengths(st_covers(wards, publicart)))
+wards <- wards %>%
+  mutate(area = set_units(st_area(wards), km^2)) %>%
+  mutate(p_dens1 = as.numeric(num_publicart1 / area))
+```
+
+
+```{r}
+ggplot(nhoods) + geom_sf(color = NA, aes(fill = p_dens)) + scale_fill_viridis_c(name = "Cambridge nhoods\nby density of public artworks", breaks = breaks <- seq(0, 180, by = 50), labels = paste(prettyNum(breaks, big.mark = ","),"artworks per square km")) + annotation_scale(location = "br") + annotation_north_arrow(location = "tr", style = north_arrow_minimal()) +
+theme_map() +
+  theme(legend.position = "right",
+    legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+```
+
+```{r}
+ggplot(wards) + geom_sf(color = NA, aes(fill = p_dens1)) + scale_fill_viridis_c(name = "Cambridge wards\nby density of public artworks", breaks = breaks <- seq(0, 400, by = 50), labels = paste(prettyNum(breaks, big.mark = ","),"artworks per square km")) + annotation_scale(location = "br") + annotation_north_arrow(location = "tr", style = north_arrow_minimal()) +
+theme_map() +
+  theme(legend.position = "right",
+    legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+```
+
+```{r}
+avg_p_dens1 <- mean(wards$p_dens1)
+avg_p_dens1
+```
+
+```{r}
+avg_p_dens <- mean(nhoods$p_dens)
+avg_p_dens
+
+```
+
+# MAP 5 and MAP 6 show the density of schools in neighborhoods and ward precincts
+
+```{r}
+nhoods <- nhoods %>%
+  mutate(num_publicschools = lengths(st_covers(nhoods, publicschools)))
+
+nhoods <- nhoods %>%
+  mutate(area = set_units(st_area(nhoods), km^2)) %>%
+  mutate(publicschools_dens = as.numeric(num_publicschools / area))
+
+ggplot(nhoods) +
+  geom_sf(color = NA, 
+          aes(fill = publicschools_dens)) +
+  scale_fill_scico(palette = "lajolla",
+                   name = "Cambridge Neighborhoods\nby Public School Density",
+                       breaks = breaks <- seq(0, 5, by = 1),
+                       labels = paste(prettyNum(breaks, big.mark = ","), 
+                                      "Public Publicschools per Square Km")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_minimal()) +
+theme_map() +
+  theme(legend.position = "right",
+    legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+```
+
+```{r}
+avg_school_dens_nhoods <- mean(nhoods$publicschools_dens)
+avg_school_dens_nhoods
+```
+
+```{r}
+wards <- wards %>%
+  mutate(num_publicschools = lengths(st_covers(wards, publicschools))) %>%
+  mutate(area = set_units(st_area(wards), km^2)) %>%
+  mutate(publicschools_dens = as.numeric(num_publicschools / area))
+
+ggplot(wards) +
+  geom_sf(color = NA,
+          aes(fill = publicschools_dens)) +
+      scale_fill_scico(palette = "lajolla",
+                   name = "Cambridge Election Wards\nby Public School Density",
+                       breaks = breaks <- seq(0, 10, by = 1),
+                       labels = paste(prettyNum(breaks, big.mark = ","), 
+                                      "Public Publicschools per Square Km")) +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tr",
+                         style = north_arrow_minimal()) +
+
+  theme_map() +
+  theme(legend.position = "right",
+    legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+```
+
+
+```{r}
+avg_school_dens_wards <- mean(wards$publicschools_dens)
+avg_school_dens_wards
+```
+
+

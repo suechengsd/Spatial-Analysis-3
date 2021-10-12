@@ -1,0 +1,64 @@
+---
+title: "Assignment 3_Spatial Relationships"
+output: html_document
+---
+
+
+```{r cars}
+library(sf)
+library(tidyverse)
+library(ggthemes)
+library(ggspatial)
+library(units)
+library(nngeo)
+wards <- st_read("/Users/anushachitturi/Downloads/Elections - Wards Precincts", quiet = TRUE)
+neighborhoods <- st_read("/Users/anushachitturi/Downloads/Cambridge Neighborhood Polygons", quiet = TRUE)
+pubart <- st_read("/Users/anushachitturi/Downloads/Public Art", quiet = TRUE)
+
+MA_state_plane <- "+proj=lcc +lat_1=41.71666666666667 +lat_2=42.68333333333333 +lat_0=41 +lon_0=-71.5 +x_0=200000 +y_0=750000 +ellps=GRS80 +units=m +no_defs"
+
+
+neighborhoods <- neighborhoods %>%
+  st_transform(MA_state_plane)
+
+wards <- wards %>%
+  st_transform(MA_state_plane)
+
+pubart <- pubart %>%
+  st_transform(MA_state_plane)
+
+neighborhoods <- neighborhoods %>%
+  mutate(num_pubart = lengths(st_covers(neighborhoods, pubart)))
+neighborhoods <- neighborhoods %>%
+  mutate(area = set_units(st_area(neighborhoods), km^2)) %>%
+  mutate(p_dens = as.numeric(num_pubart / area))
+
+wards <- wards %>%
+  mutate(num_pubart1 = lengths(st_covers(wards, pubart)))
+wards <- wards %>%
+  mutate(area = set_units(st_area(wards), km^2)) %>%
+  mutate(p_dens1 = as.numeric(num_pubart1 / area))
+
+ggplot(neighborhoods) + geom_sf(color = NA, aes(fill = p_dens)) + scale_fill_viridis_c(name = "Cambridge neighborhoods\nby density of public artworks", breaks = breaks <- seq(0, 120, by = 5), labels = paste(prettyNum(breaks, big.mark = ","),"artworks per square km")) + annotation_scale(location = "br") + annotation_north_arrow(location = "tr", style = north_arrow_minimal()) +
+theme_map() +
+  theme(legend.position = "right",
+    legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+
+ggplot(wards) + geom_sf(color = NA, aes(fill = p_dens1)) + scale_fill_viridis_c(name = "Cambridge wards\nby density of public artworks", breaks = breaks <- seq(0, 120, by = 20), labels = paste(prettyNum(breaks, big.mark = ","),"artworks per square km")) + annotation_scale(location = "br") + annotation_north_arrow(location = "tr", style = north_arrow_minimal()) +
+theme_map() +
+  theme(legend.position = "right",
+    legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray"))
+avg_p_dens1 <- mean(wards$p_dens1)
+avg_p_dens1
+
+avg_p_dens <- mean(neighborhoods$p_dens)
+avg_p_dens
+
+```
+
+
+
+
+
